@@ -34,12 +34,6 @@ move_wo_rename()
     git filter-branch --subdirectory-filter "$name" "$branch"
 }
 
-help()
-{
-    echo "help me daddy"
-    exit
-}
-
 while getopts ":c:n:" opt;
 do
     case "$opt" in
