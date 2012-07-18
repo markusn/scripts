@@ -1,6 +1,14 @@
 #!/bin/bash
 # Created by: markusn
 # Based on: http://stackoverflow.com/a/6638058
+# Example scenario:
+# Project root: ~/project/
+# Libraries in ~/project//lib/
+# We want to move ~/project/lib/X to it's own repo
+# ~/project/X used to be named ~/project/lib/Y, this renaming was done in commit Z
+# Usage:
+# > cd ~/project
+# > movefoldertorepo.sh -c Y -n lib/Y lib/X
 set -e
 
 move_with_rename()
