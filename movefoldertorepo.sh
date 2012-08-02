@@ -8,7 +8,7 @@
 # ~/project/X used to be named ~/project/lib/Y, this renaming was done in commit Z
 # Usage:
 # > cd ~/project
-# > movefoldertorepo.sh -c Y -n lib/Y lib/X
+# > movefoldertorepo.sh -c Z -n lib/Y lib/X
 set -e
 
 move_with_rename()
