@@ -5,4 +5,4 @@ Script to move a folder in a git repo to it's own repo preserving history.
 Supports preserving history even when folder has been renamed.
 
 * dotfiles.sh
-Used to symlink dotfiles in a git repo with to $HOME.
+Used to create symlinks in $HOME from a git repo with dotfiles.
