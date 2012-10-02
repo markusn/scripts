@@ -24,6 +24,7 @@ move_with_rename()
     echo "Filter all commits up to rename, but not rename itself"
     git filter-branch --subdirectory-filter "$oldname" pre-rename
     echo "Add a graft, so our rename rev comes after the processed pre-rename revs"
+    mkdir -p .git/info
     echo `git rev-parse rename` `git rev-parse pre-rename` >> .git/info/grafts
     echo "The first filter-branch left a refs backup directory. Move it away so the next filter-branch doesn't complain"
     mv .git/refs/original .git/refs/original0
