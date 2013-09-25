@@ -14,6 +14,12 @@ cat SCRIPT.sh | translate.sh fr en "^ *#[^\!] > SCRIPT_en.sh"
 
 [Dependencies]
 bash, curl, grep, html2text
+
+[Based on]
+A script by johnraff (http://crunchbang.org/forums/viewtopic.php?pid=176917#p176917)
+
+[Author]
+Markus Näsman
 '
 
 DEFAULT_TARGET_LANG=en
