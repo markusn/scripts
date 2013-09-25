@@ -6,3 +6,6 @@ Supports preserving history even when folder has been renamed.
 
 * dotfiles.sh
 Used to create symlinks in $HOME from a git repo with dotfiles.
+
+* translate.sh
+Script to translate using Google Translate from command-line.
